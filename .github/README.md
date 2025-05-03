@@ -45,16 +45,16 @@ Install all packages and required dependencies:
 pnpm install
 ```
 
-migrate prisma database:
-
-```
-pnpm exec prisma migrate dev
-```
-
 generate new prisma client:
 
 ```
-pnpm exec prisma generate
+npx prisma generate
+```
+
+migrate prisma database:
+
+```
+npx prisma migrate dev
 ```
 
 run whole project as dev:
