@@ -1,7 +1,8 @@
 "use client";
 
-import Link from "next/link";
 import { useEffect, useState } from "react";
+import Link from "next/link";
+
 import LoginButton from "./loginButton";
 
 export default function HamburgerMenuComponent({ user }: any) {
@@ -34,7 +35,7 @@ export default function HamburgerMenuComponent({ user }: any) {
           <p>Strona główna</p>
         </Link>
         <Link href="/blog">
-          <p>Blog</p>
+          <p>Wszystkie posty</p>
         </Link>
         <LoginButton user={user} />
       </nav>

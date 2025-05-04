@@ -1,7 +1,7 @@
 {
-  "version": "0.1.11",
-  "name": "nextjs-auth",
-  "description": "Next.js Database Authentication with Auth.js and Prisma",
+  "name": "blog",
+  "version": "0.2.0",
+  "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -9,32 +9,32 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@auth/prisma-adapter": "^2.4.2",
-    "@hookform/resolvers": "^3.9.0",
-    "@prisma/client": "^5.18.0",
-    "axios": "^1.7.4",
-    "bcrypt": "^5.1.1",
-    "date-and-time": "^3.5.0",
-    "next": "~14.2.5",
-    "next-auth": "5.0.0-beta.20",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
+    "@auth/prisma-adapter": "^2.9.0",
+    "@hookform/resolvers": "^5.0.1",
+    "@prisma/client": "^6.7.0",
+    "axios": "^1.9.0",
+    "bcryptjs": "^3.0.2",
+    "date-and-time": "^3.6.0",
+    "next": "14.2.28",
+    "next-auth": "5.0.0-beta.27",
+    "react": "^18",
+    "react-dom": "^18",
     "react-google-recaptcha-v3": "^1.10.1",
-    "react-hook-form": "^7.52.2",
-    "react-hot-toast": "^2.4.1",
-    "react-textarea-autosize": "^8.5.3",
-    "the-new-css-reset": "^1.11.2",
-    "zod": "^3.23.8"
+    "react-hook-form": "^7.56.2",
+    "react-hot-toast": "^2.5.2",
+    "react-textarea-autosize": "^8.5.9",
+    "sharp": "^0.34.1",
+    "the-new-css-reset": "^1.11.3",
+    "zod": "^3.24.3"
   },
   "devDependencies": {
-    "@types/bcrypt": "^5.0.2",
-    "@types/node": "^22.5.0",
-    "@types/react": "^18.3.4",
-    "@types/react-dom": "^18.3.0",
-    "eslint": "8.57.0",
-    "eslint-config-next": "~14.2.5",
-    "prisma": "^5.18.0",
-    "sass": "^1.77.8",
-    "typescript": "^5.5.4"
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.28",
+    "prisma": "^6.7.0",
+    "sass": "^1.87.0",
+    "typescript": "^5"
   }
 }

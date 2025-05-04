@@ -2,10 +2,11 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { Toaster } from "react-hot-toast";
-import { auth } from "@/lib/auth";
+
 import Provider from "@/components/wrappers/provider";
 import LoginButton from "@/components/header/loginButton";
 import HamburgerMenu from "@/components/header/hamburgerMenu";
+import { auth } from "@/lib/auth";
 
 import "@/styles/globals.scss";
 import "the-new-css-reset/css/reset.css";
@@ -14,7 +15,7 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "nextjs-auth",
+  title: "Blog",
   description: "Next.js Database Authentication with Auth.js and Prisma",
   icons: "/favicon.ico",
 };
@@ -42,7 +43,7 @@ export default async function RootLayout({
                 draggable={false}
                 priority
               />
-              <h1>nextjs-auth</h1>
+              <h1>Blog</h1>
             </Link>
 
             <div className="desktopLinks">
@@ -50,7 +51,7 @@ export default async function RootLayout({
                 <p>Strona główna</p>
               </Link>
               <Link href="/blog">
-                <p>Blog</p>
+                <p>Wszystkie posty</p>
               </Link>
               <LoginButton user={user} />
             </div>
@@ -62,9 +63,10 @@ export default async function RootLayout({
 
           <footer>
             <p>
-              Stworzone z 🩷 przez{" "}
+              Stworzone przez{" "}
               <Link href="https://github.com/Quanosek">Jakuba Kłało</Link>{" "}
-              &#169; 2024
+              &#169; {new Date().getFullYear()} klalo.pl. Wszelkie prawa
+              zastrzeżone.
             </p>
           </footer>
         </Provider>

@@ -1,8 +1,28 @@
-@import "./colors.scss";
-
 :root {
   color-scheme: dark;
   --shadow: 2px 2px 10px -6px #000000;
+
+  --white: #ffffff;
+  --black: #000000;
+
+  --primary: #ededed;
+  --secondary: #1e1e1e;
+  --accent: #512f73;
+  --accent-hover: #723272;
+
+  --input: #333333;
+
+  --button: #1e1e1e;
+  --button-hover: #232323;
+  --button-bright: #393939;
+  --button-bright-hover: #414141;
+
+  --green: #24562e;
+  --green-hover: #31613a;
+  --blue: #254869;
+  --blue-hover: #285580;
+  --red: #722424;
+  --red-hover: #8d3636;
 }
 
 :focus-visible {
@@ -173,7 +193,7 @@ footer {
   background-color: var(--black);
 
   p {
-    opacity: 80%;
+    opacity: 50%;
     font-size: 90%;
   }
 }

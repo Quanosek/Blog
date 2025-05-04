@@ -1,7 +1,9 @@
+/* eslint-disable @typescript-eslint/no-unsafe-function-type */
+
 "use client";
 
-import Image from "next/image";
 import { useState, useRef } from "react";
+import Image from "next/image";
 
 import styles from "@/styles/forms.module.scss";
 

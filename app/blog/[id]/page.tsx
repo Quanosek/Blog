@@ -1,10 +1,12 @@
 import Link from "next/link";
+
+import DeleteComment from "@/components/deleteComment";
 import { auth } from "@/lib/auth";
 import db from "@/lib/db";
+
 import AddComment from "./addComment";
 import DeletePost from "./deletePost";
 import LoginButton from "./loginButton";
-import DeleteComment from "@/components/deleteComment";
 
 import pl from "date-and-time/locale/pl";
 import date from "date-and-time";

@@ -1,6 +1,9 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+
 import { NextResponse } from "next/server";
+import { compare, hash } from "bcryptjs";
+
 import db from "@/lib/db";
-import { compare, hash } from "bcrypt";
 import Session from "@/lib/api/session";
 
 export async function POST(req: Request) {

@@ -1,39 +1,39 @@
-datasource db {
-    provider = "postgresql"
-    url      = env("DATABASE_URL")
+generator client {
+  provider = "prisma-client-js"
 }
 
-generator client {
-    provider = "prisma-client-js"
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
 }
 
 model Users {
-    id        String     @id @default(uuid())
-    username  String     @unique
-    password  String
-    createdAt DateTime   @default(now())
-    updatedAt DateTime   @updatedAt
-    Posts     Posts[]
-    Comments  Comments[]
+  id        String     @id @default(uuid())
+  username  String     @unique
+  password  String
+  createdAt DateTime   @default(now())
+  updatedAt DateTime   @updatedAt
+  Comments  Comments[]
+  Posts     Posts[]
 }
 
 model Posts {
-    id        String     @id @default(cuid())
-    title     String
-    content   String
-    User      Users      @relation(fields: [author], references: [username])
-    author    String
-    createdAt DateTime   @default(now())
-    updatedAt DateTime   @updatedAt
-    Comments  Comments[]
+  id        String     @id @default(cuid())
+  title     String
+  content   String
+  author    String
+  createdAt DateTime   @default(now())
+  updatedAt DateTime   @updatedAt
+  Comments  Comments[]
+  User      Users      @relation(fields: [author], references: [username])
 }
 
 model Comments {
-    id        String   @id @default(cuid())
-    text      String
-    User      Users    @relation(fields: [author], references: [username])
-    author    String
-    Post      Posts    @relation(fields: [postId], references: [id])
-    postId    String
-    createdAt DateTime @default(now())
+  id        String   @id @default(cuid())
+  text      String
+  author    String
+  postId    String
+  createdAt DateTime @default(now())
+  User      Users    @relation(fields: [author], references: [username])
+  Post      Posts    @relation(fields: [postId], references: [id])
 }

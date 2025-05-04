@@ -31,7 +31,7 @@
 
 <br />
 
-<img width="100%" style="max-width: 1440px" src="./screenshot.webp" />
+<!-- <img width="100%" style="max-width: 1440px" src="./screenshot.webp" /> -->
 
 <h2>At first run:</h2>
 

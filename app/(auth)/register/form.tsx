@@ -1,14 +1,15 @@
 "use client";
 
-import { useRouter } from "next/navigation";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import toast from "react-hot-toast";
 import axios from "axios";
 import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
-import { RegisterUserInput, registerUserSchema } from "@/lib/user-schema";
+
 import PasswordInput from "@/components/passwordInput";
+import { RegisterUserInput, registerUserSchema } from "@/lib/user-schema";
 
 import styles from "@/styles/forms.module.scss";
 
