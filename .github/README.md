@@ -35,7 +35,7 @@
 
 <h2>At first run:</h2>
 
-Create new `.env` file and fill it in according to [example template](./example.env).
+Create new `.env` file and fill it in according to [example template](./.env.example).
 
 <br />
 
